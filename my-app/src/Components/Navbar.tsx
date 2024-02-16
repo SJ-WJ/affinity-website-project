@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import DonateButton from './Donate'
 import { FiChevronDown } from "react-icons/fi"
 
-const Navbar = () => {
-    const [activeMenu, setActiveMenu] = useState(null);
+interface MenuItem {
+    title: string;
+    subItems: Array<{ name: string; url: string }>;
+}
+
+const Navbar: React.FC = () => {
+    const [activeMenu, setActiveMenu] = useState<number | null>(null);
 
     const menuItems = [
         {
@@ -42,21 +48,22 @@ const Navbar = () => {
             ],
         }
     ];
-
     return (
         <ul className="relative flex">
             {menuItems.map((item, index) => (
+                //text-lg, text-xl, text-2xl
                 <li
                     key={index}
-                    className="inline-block container"
+                    className={`inline-block px-5 py-3 text-2xl font-medium rounded-full mr-20 ${activeMenu === index ? 'bg-blue-500 text-white' : 'bg-white text-gray-700'}`}
                     onMouseOver={() => setActiveMenu(index)}
                     onMouseLeave={() => setActiveMenu(null)}
                 >
-                    <span className="mr-1">{item.title}</span>
+                    
+                    {item.title}
                     {activeMenu === index && (
-                        <ul className="absolute bg-white shadow-md mt-0">
+                        <ul className="absolute mt-1 shadow-md rounded-md text-gray-700 text-lg">
                             {item.subItems.map(subItem => (
-                                <li key={subItem.name} className="hover:bg-gray-100">
+                                <li key={subItem.name} className="px-4 py-2 hover:bg-blue-500 hover:text-white rounded-md">
                                     <a href={subItem.url}>{subItem.name}</a>
                                 </li>
                             ))}
@@ -64,6 +71,7 @@ const Navbar = () => {
                     )}
                 </li>
             ))}
+            <DonateButton/>
         </ul>
     );
 };
