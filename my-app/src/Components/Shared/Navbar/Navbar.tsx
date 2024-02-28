@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DonateButton from '../Donate';
+import DonateButton from '../DonationButton/Donate';
 import { FiChevronDown } from "react-icons/fi";
 import { menuItems } from './MenuItems';
 import './Navbar.css';

@@ -1,11 +1,9 @@
-/* styles/NavbarStyles.css */
 .navbar-item {
   @apply inline-block font-medium rounded-full;
-  @apply px-5 py-3 text-2xl mr-20 text-gray-700; /* Default style */
+  @apply px-5 py-3 mr-20 text-gray-700; /* Default style */
 
   /* @apply sm:px-2 sm:py-1 sm:text-sm sm:mr-5; /* Small mobile devices (min-width: 640px) */
   /* @apply md:px-3 md:py-1 md:text-base md:mr-10; /* Medium mobile devices (768px to 1024px) */
-  
   @apply lg:px-4 lg:py-1 lg:text-base lg:mr-10; /* Large mobile devices/small tablets (1024px to 1280px) */
   @apply xl:px-4 xl:py-1 xl:text-xl xl:mr-8; /* Medium tablets (1280px to 1536px) */
   @apply 2xl:px-5 2xl:py-1 2xl:text-xl 2xl:mr-12; /* Large tablets/desktops (1536px and up) */
@@ -20,7 +18,6 @@
   
   /* @apply sm:px-2 sm:py-1 sm:text-sm; /* Small mobile devices (min-width: 640px) */
   /* @apply md:px-3 md:py-1 md:text-base; /* Medium mobile devices (768px to 1024px) */
-
   @apply lg:px-4 lg:py-2 lg:text-lg; /* Large mobile devices/small tablets (1024px to 1280px) */
   @apply xl:px-5 xl:py-2 xl:text-xl;  /* Medium tablets (1280px to 1536px) */
   @apply 2xl:px-6 2xl:py-2 2xl:text-lg; /* Large tablets/desktops (1536px and up) */
