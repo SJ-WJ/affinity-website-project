@@ -2,28 +2,33 @@ import React from "react";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import Headline from "./Sections/Headline";
+import SiteIntro from "./Sections/SiteIntro";
+import StayUpToDate from "./Sections/StayUpToDate";
+import Achievements from "./Sections/Achievements";
+import SocialMedia from "./Sections/SocialMedia";
 
 const MainPage: React.FC = () => {
   return (
     <div>
       <Header />
       <main className="main-content">
-        {/* <section className="head-line">
-          <h1>Headline with some nice background image</h1>
-        </section> */}
         <Headline text="Transforming Lives Through Mentorship: Empowering At-Risk Youth for a Brighter Future" />
-        <section className="introduction">
+        {/* <section className="introduction">
           <p>Introduction paragraphs ...</p>
-        </section>
-        <section className="stay-up-to-date">
+        </section> */}
+        <SiteIntro />
+        {/* <section className="stay-up-to-date">
           <h2>Stay Up to Date</h2>
-        </section>
-        <section className="achievement">
+        </section> */}
+        <StayUpToDate />
+        {/* <section className="achievement">
           <h2>achievement</h2>
-        </section>
-        <section className="social-media">
+        </section> */}
+        <Achievements />
+        {/* <section className="social-media">
           <h2>Social media area</h2>
-        </section>
+        </section> */}
+        <SocialMedia />
       </main>
       <Footer />
     </div>
