@@ -1,0 +1,9 @@
+/* Headline.css */
+
+.headline-container {
+  @apply bg-cover bg-center flex items-center justify-center bg-fawn;
+}
+
+.headline-text {
+  @apply text-rose-taupe text-4xl;
+}

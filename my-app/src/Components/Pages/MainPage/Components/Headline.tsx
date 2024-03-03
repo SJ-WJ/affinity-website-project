@@ -1,10 +1,22 @@
-// import React from "react";
+import React from 'react';
+import './Headline.css'; // Import the CSS file
 
-// const Headline: React.FC = () => {
-//   return (
-    
-//   );
-// };
+interface HeadlineProps {
+  text: string;
+  // backgroundImageUrl: string;
+}
 
-// export default Headline;
+const Headline: React.FC<HeadlineProps> = ({ text }) => {
+  return (
+    <div
+      className="headline-container"
+      // style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+    >
+      <h1 className="headline-text">{text}</h1>
+    </div>
+  );
+};
+
+export default Headline;
+
 

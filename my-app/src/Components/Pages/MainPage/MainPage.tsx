@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import Headline from "./Components/Headline";
 
 const MainPage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage: React.FC = () => {
         <section className="head-line">
           <h1>Headline with some nice background image</h1>
         </section>
+        <Headline text="Testing" />
         <section className="introduction">
           <p>Introduction paragraphs ...</p>
         </section>
