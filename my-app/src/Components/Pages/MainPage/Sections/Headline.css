@@ -1,0 +1,17 @@
+.headline-container {
+  @apply flex w-full h-80;
+}
+
+.background-image {
+  @apply flex-1 bg-contain bg-center bg-dutch-wine;
+  background-image: url('../../../../images/ai-mentorship-image-2.jpg');
+  background-repeat: no-repeat;
+}
+
+.headline-text-container {
+  @apply flex-1 flex items-center justify-center p-8 bg-dutch-wine;
+}
+
+.headline-text {
+  @apply text-rose-taupe text-4xl font-bold font-sans;
+}
