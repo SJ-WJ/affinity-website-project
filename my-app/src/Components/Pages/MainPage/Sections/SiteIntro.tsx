@@ -1,4 +1,5 @@
 import React from "react";
+import Gallery from "./Gallery";
 
 const SiteIntro: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const SiteIntro: React.FC = () => {
       </div>
       <div className="w-full max-w-4xl">
         {/* Placeholder for Slideshow */}
-        Slideshow
+        <Gallery />
       </div>
     </div>
   );
