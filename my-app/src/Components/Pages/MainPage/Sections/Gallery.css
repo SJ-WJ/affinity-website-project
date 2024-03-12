@@ -1,10 +1,66 @@
 .embla {
+  position: relative;
+  max-width: 600px; /* Adjust based on your needs */
+  margin: auto;
+  overflow: visible; /* Set to visible to allow buttons to appear outside */
+}
+
+.embla__viewport {
   overflow: hidden;
 }
+
 .embla__container {
   display: flex;
 }
+
 .embla__slide {
+  position: relative;
   flex: 0 0 100%;
-  min-width: 0;
+  padding-top: 56.25%; /* Adjust this to change the aspect ratio (56.25% for 16:9) */
+  overflow: hidden; /* Hide parts of the img that exceed the container */
+}
+
+.embla__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container without changing aspect ratio */
+  /* For a different effect, you can use 'contain' instead of 'cover' */
+}
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #26408b; /* Original background color */
+  border: 1px solid #c2e7d9; /* Original border color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #c2e7d9; /* Original color */
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.embla__button--prev {
+  left: -50px;
+}
+
+.embla__button--next {
+  right: -50px;
+}
+
+/* Hover effect */
+.embla__button:hover {
+  background: #26408b; /* New background color on hover */
+  border-color: #e7a977; /* New border color on hover */
+  color: #e7a977; /* Optional: change text/icon color on hover */
 }
