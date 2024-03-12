@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import DonateButton from '../DonationButton/Donate';
-import { FiChevronDown } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+import DonateButton from '../../DonationButton/Donate';
+// import { FiChevronDown } from "react-icons/fi";
 import { menuItems } from './MenuItems';
 import './Navbar.css';
 
@@ -21,7 +22,7 @@ const Navbar: React.FC = () => {
                         <ul className="absolute mt-1 shadow-md rounded-md">
                             {item.subItems.map(subItem => (
                                 <li key={subItem.name} className="submenu-item">
-                                    <a href={subItem.url}>{subItem.name}</a>
+                                    <Link to={subItem.url}>{subItem.name}</Link>
                                 </li>
                             ))}
                         </ul>

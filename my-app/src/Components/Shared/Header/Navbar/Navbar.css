@@ -1,6 +1,6 @@
 .navbar-item {
   @apply inline-block font-medium rounded-full;
-  @apply px-5 py-3 mr-20 text-gray-700; /* Default style */
+  @apply px-5 py-3 mr-20 text-fawn; /* Default style */
 
   /* @apply sm:px-2 sm:py-1 sm:text-sm sm:mr-5; /* Small mobile devices (min-width: 640px) */
   /* @apply md:px-3 md:py-1 md:text-base md:mr-10; /* Medium mobile devices (768px to 1024px) */
@@ -14,7 +14,7 @@
 }
 
 .submenu-item {
-  @apply px-4 py-2 rounded-md text-gray-700;
+  @apply px-4 py-2 rounded-md text-fawn;
   
   /* @apply sm:px-2 sm:py-1 sm:text-sm; /* Small mobile devices (min-width: 640px) */
   /* @apply md:px-3 md:py-1 md:text-base; /* Medium mobile devices (768px to 1024px) */
