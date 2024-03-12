@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../Shared/Header/Header";
-import Footer from "../../Shared/Footer/Footer";
 import Headline from "./Sections/Headline";
 import SiteIntro from "./Sections/SiteIntro";
 import StayUpToDate from "./Sections/StayUpToDate";
@@ -10,7 +8,6 @@ import SocialMedia from "./Sections/SocialMedia";
 const MainPage: React.FC = () => {
   return (
     <div>
-      <Header />
       <main className="main-content">
         <Headline text="Transforming Lives Through Mentorship: Empowering At-Risk Youth for a Brighter Future" />
         {/* <section className="introduction">
@@ -30,7 +27,7 @@ const MainPage: React.FC = () => {
         </section> */}
         <SocialMedia />
       </main>
-      <Footer />
+
     </div>
   );
 };
