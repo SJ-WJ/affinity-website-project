@@ -22,12 +22,23 @@ const Gallery: React.FC = () => {
       emblaApi.on('select', updateButtonStates);
       emblaApi.on('init', updateButtonStates);
 
-      // Return a cleanup function that removes the event listeners
+      // Cleanup function
       return () => {
         emblaApi.off('select', updateButtonStates);
         emblaApi.off('init', updateButtonStates);
       };
     }
+  }, [emblaApi]);
+
+  // Setup autoplay
+  useEffect(() => {
+    if (!emblaApi) return;
+    
+    const autoplayInterval = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 4000); // Change 3000 to whatever interval you want between slides (in milliseconds)
+
+    return () => clearInterval(autoplayInterval);
   }, [emblaApi]);
 
   return (
@@ -57,7 +68,6 @@ const Gallery: React.FC = () => {
       >
         &#9654; {/* Right-pointing arrow (Unicode character) */}
       </button>
-
     </div>
   );
 };
