@@ -40,6 +40,9 @@ const Footer: React.FC = () => {
         </div>
 
       </div>
+      <div className="flex place-content-center p-3 pb-3 font-semibold text-mint-green">
+        Developed by Jindo and Siraj
+      </div>
     </footer>
   );
 };
