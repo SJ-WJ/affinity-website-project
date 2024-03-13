@@ -5,7 +5,6 @@ import Headline from "./Sections/Headline";
 import SiteIntro from "./Sections/SiteIntro";
 import StayUpToDate from "./Sections/StayUpToDate";
 import Achievements from "./Sections/Achievements";
-import SocialMedia from "./Sections/SocialMedia";
 
 const MainPage: React.FC = () => {
   return (
@@ -28,7 +27,6 @@ const MainPage: React.FC = () => {
         {/* <section className="social-media">
           <h2>Social media area</h2>
         </section> */}
-        <SocialMedia />
       </main>
       <Footer />
     </div>
