@@ -10,11 +10,11 @@
 }
 
 .navbar-item-active {
-  @apply bg-blue-500 text-white;
+  @apply bg-marian-blue text-white;
 }
 
 .submenu-item {
-  @apply px-4 py-2 rounded-md text-fawn;
+  @apply px-4 py-2 bg-marian-blue rounded-md text-fawn;
   
   /* @apply sm:px-2 sm:py-1 sm:text-sm; /* Small mobile devices (min-width: 640px) */
   /* @apply md:px-3 md:py-1 md:text-base; /* Medium mobile devices (768px to 1024px) */
@@ -24,5 +24,5 @@
 }
 
 .submenu-item:hover {
-  @apply bg-blue-500 text-white;
+  @apply bg-mint-green text-rose-taupe;
 }

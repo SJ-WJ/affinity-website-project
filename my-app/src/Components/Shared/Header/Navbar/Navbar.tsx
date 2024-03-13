@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     const [activeMenu, setActiveMenu] = useState<number | null>(null);
 
     return (
-        <ul className="relative flex">
+        <ul className="relative flex cursor-pointer">
             {menuItems.map((item, index) => (
                 <li
                     key={index}
@@ -17,9 +17,9 @@ const Navbar: React.FC = () => {
                     onMouseOver={() => setActiveMenu(index)}
                     onMouseLeave={() => setActiveMenu(null)}
                 >
-                    {item.title}
+                    {item.title}<FiChevronDown/>
                     {activeMenu === index && (
-                        <ul className="absolute mt-1 shadow-md rounded-md">
+                        <ul className="absolute mt-1 shadow-md rounded-md z-10">
                             {item.subItems.map(subItem => (
                                 <li key={subItem.name} className="submenu-item">
                                     <Link to={subItem.url}>{subItem.name}</Link>
