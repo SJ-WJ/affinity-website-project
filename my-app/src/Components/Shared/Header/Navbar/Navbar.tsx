@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DonateButton from '../../DonationButton/Donate';
-// import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 import { menuItems } from './MenuItems';
 import './Navbar.css';
 
