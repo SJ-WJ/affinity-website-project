@@ -2,10 +2,6 @@
   --banner-height: 300px;
 }
 
-.our-mission-content {
-  position: relative;
-}
-
 .banner-wrapper {
   position: relative;
 }
@@ -32,9 +28,31 @@
   text-transform: uppercase;
   font-size: 3.5rem;
   font-weight: 600;
-  color: white;
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translate(0, -50%);
+}
+
+.our-mission-content {
+  position: relative;
+  margin: 100px;
+}
+
+.grid-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.grid-header {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.grid-item {
+  font-size: 1.3rem;
+  text-align: justify;
 }
