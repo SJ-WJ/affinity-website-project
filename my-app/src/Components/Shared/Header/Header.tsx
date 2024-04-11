@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "./Navbar/Navbar";
 // import PreviousNavBar from "./PreviousNavBar";
 import Logo from '../../../images/AFIINITY+LOGOtransparent.png';
 
