@@ -1,0 +1,12 @@
+.hero-section{
+    @apply relative overflow-hidden h-[300px];
+}
+
+.hero-section img{
+    @apply w-full absolute top-[-200px];
+}
+
+.hero-text{
+    @apply absolute top-1/2 left-[10%] uppercase text-5xl font-semibold text-white transform -translate-y-1/2;
+}
+

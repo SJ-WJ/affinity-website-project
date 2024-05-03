@@ -18,7 +18,7 @@ const MeetUps = lazy(() => import('./Components/Pages/WhatWedo/MeetUps/MeetUps')
 const Mentorship = lazy(() => import('./Components/Pages/WhatWedo/Mentorship/Mentorship'));
 const CommunityEngagement = lazy(() => import('./Components/Pages/WhatWedo/CommunityEngagement/CommunityEngagement'));
 
-//Get Involced Menus
+//Get Involved Menus
 const BeAMentor = lazy(() => import('./Components/Pages/GetInvolved/BeAMentor/BeAMentor'));
 const BeAMentee = lazy(() => import('./Components/Pages/GetInvolved/BeAMentee/BeAMentee'));
 const BeADonor = lazy(() => import('./Components/Pages/GetInvolved/BeADonor/BeADonor'));
