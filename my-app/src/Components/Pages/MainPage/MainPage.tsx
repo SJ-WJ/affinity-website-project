@@ -1,7 +1,6 @@
 import React from "react";
 import Headline from "./Sections/Headline";
 import SiteIntro from "./Sections/SiteIntro";
-import StayUpToDate from "./Sections/StayUpToDate";
 import Achievements from "./Sections/Achievements";
 
 const MainPage: React.FC = () => {
@@ -16,7 +15,6 @@ const MainPage: React.FC = () => {
         {/* <section className="stay-up-to-date">
           <h2>Stay Up to Date</h2>
         </section> */}
-        <StayUpToDate />
         {/* <section className="achievement">
           <h2>achievement</h2>
         </section> */}
