@@ -30,4 +30,4 @@ We organized tasks and adopted an agile methodology using DevOps tools. You can 
 
 ## Temporary Site
 
-A temporary version of the site was hosted on Vercel for client interaction during development. Although the site was not close to being finished, it provided a platform for feedback and testing. You can view the temporary site [here](https://affinity-website-project.vercel.app/).
+A temporary version of the site was hosted on Vercel for client interaction during development. Although the site was not finished, it provided a platform for feedback and testing. You can view the temporary site [here](https://affinity-website-project.vercel.app/).
